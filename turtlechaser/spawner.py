@@ -67,6 +67,7 @@ class Spawner(Node):
             turtle_to_spawn.theta = random.uniform(-3, 3)
             turtle_to_spawn.name = self.name_prefix + str(i)
             
+            self.turtle_map[turtle_to_spawn.name] = vertices[i]
             
             future = spawner.call_async(turtle_to_spawn)
             future.add_done_callback(partial(self.future_callback, spawned_x=turtle_to_spawn.x, spawned_y=turtle_to_spawn.y))
