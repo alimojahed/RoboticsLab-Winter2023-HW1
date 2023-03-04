@@ -5,7 +5,7 @@ A main turtle (a.k.a. chaser) that will chase the other turtles, spawning only w
 
 ## **Solution**  
 - [x] Creating a controller node that will control the linear and angular velocity of the *chaser turtle* as per the spawning of the other turtles.
-- [x] Creating a spawner node that will spawn turtles only when the previous one is chased.
+- [x] Creating a spawner node that will spawn turtles on a polygon.
 - [x] Using P controller to guide the chaser to the spawned turtle.
 - [x] Creating a launch file to launch all the required nodes in one go!
 
@@ -19,7 +19,7 @@ mkdir src && cd src
 ```
 *Cloning the package*
 ```
-git clone https://github.com/kalashjain23/turtlechaser.git
+git clone https://github.com/alimojahed/RoboticsLab-Winter2023-HW1.git
 cd ~/turtlechaser_ws
 ```
 *Installing the dependencies and building the workspace*
